@@ -87,6 +87,11 @@ table = {
 				{name: 'flurry', dmg: 1.25, crit: {chance: 25, dmg: 1.5}, cooldown: 15},
 				{name: 'stealth', dmg: 0, crit: {chance: 0, dmg: 0}, cooldown: 60}
 			],
+			ranger: [
+				{name: 'someshot', dmg: 3, crit: {chance: 50, dmg: 2}, cooldown: 30},
+				{name: 'pewpewpew', dmg: 1.25, crit: {chance: 25, dmg: 1.5}, cooldown: 15},
+				{name: 'whoops', dmg: 0, crit: {chance: 0, dmg: 0}, cooldown: 60}
+			],
 			warrior: [
 				{name: 'slash', dmg: 1.5, crit: {chance: 25, dmg: 1.5}, cooldown: 30},
 				{name: 'bash', dmg: 1.25, crit: {chance: 5, dmg: 1}, cooldown: 15},
