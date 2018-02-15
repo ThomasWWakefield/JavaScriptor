@@ -119,7 +119,7 @@ table = {
 		{name: 'High Elf', hp: .7, mana: 1.5, speed: .8, crit: {chance: 10, dmg: 25}, dmg: 1, spelldmg: 1.50},
 		{name: 'Human', hp: 1, mana: 1, speed: 1, crit: {chance: 5, dmg: 5}, dmg: 1, spelldmg: 1},
 		{name: 'Dwarf', hp: 1.25, mana: .6, speed: 1.25, crit: {chance: 20, dmg: 7}, dmg: 1.25, spelldmg: .8},
-		{name: 'Troll', hp: 1.25, mana: .6, speed: 1.25, crit: {chance: 20, dmg: 7}, dmg: 1.25, spelldmg: .8},
+		{name: 'Troll', hp: 1.25, mana: .4, speed: .9, crit: {chance: 40, dmg: 7}, dmg: 1.75, spelldmg: .3},
 		{name: 'Dark Elf', hp: .9, mana: 1.25, speed: 1, crit: {chance: 15, dmg: 12}, dmg: 1.1, spelldmg: 1.25}
 	],
 	classes: [
