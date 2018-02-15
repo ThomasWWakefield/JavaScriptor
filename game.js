@@ -1,5 +1,6 @@
-
-
+/*
+will be changing to my idea
+*/
 
 var playerInfo = {
 	name: 'Frank',
@@ -115,15 +116,15 @@ table = {
 		]
 	},
 	races: [
-		{name: 'Elf', hp: .9, mana: .7, speed: 1.50, crit: {chance: 25, dmg: 15}, dmg: .9, spelldmg: .7},
-		{name: 'High Elf', hp: .7, mana: 1.5, speed: .8, crit: {chance: 10, dmg: 25}, dmg: 1, spelldmg: 1.50},
+		{name: 'LightInfantry', hp: 3, speed: 2, dmg: 2},
+		{name: 'HeavyInfantry', hp: 5, speed: 1, dmg: 3},
 		{name: 'Human', hp: 1, mana: 1, speed: 1, crit: {chance: 5, dmg: 5}, dmg: 1, spelldmg: 1},
 		{name: 'Dwarf', hp: 1.25, mana: .6, speed: 1.25, crit: {chance: 20, dmg: 7}, dmg: 1.25, spelldmg: .8},
 		{name: 'Dark Elf', hp: .9, mana: 1.25, speed: 1, crit: {chance: 15, dmg: 12}, dmg: 1.1, spelldmg: 1.25}
 	],
 	classes: [
-		{name: 'Rogue', hp: .9, mana: .7, speed: 1.50, crit: {chance: 15, dmg: 10}, dmg: 1.5, spelldmg: 0},
-		{name: 'Warrior', hp: 1.50, mana: .5, speed: 1.25, crit: {chance: 20, dmg: 15}, dmg: 1.25, spelldmg: 0}
+		{name: 'French', hp: .9, mana: .7, speed: 1.50, crit: {chance: 15, dmg: 10}, dmg: 1.5, spelldmg: 0},
+		{name: 'British', hp: 1.50, mana: .5, speed: 1.25, crit: {chance: 20, dmg: 15}, dmg: 1.25, spelldmg: 0}
 	]
 
 }
