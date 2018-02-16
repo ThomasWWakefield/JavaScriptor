@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <script>
-	var _ = {};
+	var _ = _ || {};
 
 	_.getSize = function(){
 
@@ -18,10 +18,8 @@
 		for(let i=0; i<width; i++){
 			// Rows
 
-
 			for(let x=0; x<width+1; x++){
 				// Columns	
-
 
 				div = document.createElement("div");
 				div.className = 'boxb';
@@ -31,19 +29,12 @@
 				}
 
 				document.body.appendChild(div);
-
-				console.info('x = ' + x);
-
 			}
-
 
 			div = document.createElement("div");
 			div.className = 'box1';
 
 			document.body.appendChild(div);
-
-			console.info('i = ' + i);
-
 		}
 
 	}
@@ -61,7 +52,7 @@
 		height:50px;
 		width:50px;
 		background:green;
-		border-right: 1px #ECECEC solid;
+		border-right: 1px #ECECEC dotted;
 	}
 
 	.boxb:hover 
@@ -71,19 +62,19 @@
 
 
 	.boxpad {
-		padding: 0px lightgray solid;
+		padding: 0px #ECECEC solid;
 	}
 
 	.boxborder-left {
-		border-left: 1px #FF0000 solid;
+		border-left: 1px #FF0000 dotted;
 	}
 
 	.boxborder-top {
-		border-top: 1px lightgray solid;
+		border-top: 1px #ECECEC dotted;
 	}
 
 	.boxborder-bottom {
-		border-bottom: 1px lightgray solid;
+		border-bottom: 1px #ECECEC dotted;
 	}
 
 
