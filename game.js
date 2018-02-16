@@ -56,7 +56,7 @@ var playerInfo = {
 //TROOP DATA AND FACTION BONUSESS
 table = {
 	troops: [
-		{name: 'LightInfantry', hp: 4, speed: 4, dmg: 2, charge: 4},
+		{id: 1, name: 'LightInfantry', hp: 4, speed: 4, dmg: 2, charge: 4},
 		{name: 'HeavyInfantry', hp: 10, speed: 2, dmg: 6, charge: 2},
 		{name: 'LightCavalry', hp: 6, speed: 3, dmg: 4, charge: 4},
 		{name: 'HevayCavalry', hp: 10, speed: 1, dmg: 8, charge: 2},
@@ -64,17 +64,17 @@ table = {
 		{name: 'Militia', hp: 4, speed: 2, dmg: 4, charge: 6},
 		{name: 'Grenadiers', hp: 2, speed: 2, dmg: 8, charge: 2},
 		{name: 'Artillery', hp: 2, speed: 1, dmg: 10, charge: 2},
-		{name: 'Scouts', hp: 2, speed: 5, dmg: 2, charge: 4},
+		{name: 'Scouts', hp: 2, speed: 5, dmg: 2, charge: 4}
 	],
 	factions: [
 		//French gets +1 speed to everything
-		{name: 'French', hp: 0, speed: 1, dmg: 0,},
+		{id: 1, name: 'French', hp: 0, speed: 1, dmg: 0,},
 		//Brits only get calvary +1 buff all around
 		{name: 'British', hp: 0, speed: 0, dmg: 0,},
 		//Gets 1 extra spawn Point
 		{name: 'Spain', hp: 0, speed: 0, dmg: 0,},
 		//Gets 2 extra spawn Points
-		{name: 'Russian', hp: 0, speed: 1, dmg: 0,},
+		{name: 'Russian', hp: 0, speed: 0, dmg: 0,}
 	]
 
 }
