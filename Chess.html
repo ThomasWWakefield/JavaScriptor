@@ -11,24 +11,28 @@
 
 	}
 
-	_.createBoard = function(width){
+	_.createBoard = function(gridSize){
 
-		// width = _.getSize();
+		// gridSize = _.getSize();
 
-		for(let i=0; i<width; i++){
+		for(let i=0; i<gridSize; i++){
 			// Rows
 
-			for(let x=0; x<width; x++){
+			for(let x=0; x<gridSize; x++){
 				// Columns	
 
 				div = document.createElement("div");
-				div.className = 'boxb';
+				tempClass = 'boxb';
 				
 				if(x === 0){
-					tempClass = 'boxb boxborder-left';
-					div.className = tempClass;
+					tempClass = tempClass + ' boxborder-left';
 				}
 
+				if(i === 0) {
+					tempClass = tempClass + ' boxborder-top'
+				}
+
+				div.className = tempClass;
 				document.body.appendChild(div);
 			}
 
@@ -54,6 +58,7 @@
 		width:50px;
 		background:green;
 		border-right: 1px #ECECEC dotted;
+		border-bottom: 1px #ECECEC dotted;
 	}
 
 	.boxb:hover 
@@ -74,19 +79,13 @@
 		border-top: 1px #ECECEC dotted;
 	}
 
-	.boxborder-bottom {
-		border-bottom: 1px #ECECEC dotted;
-	}
-
-
 	.box1
 	{
-		height:50px;
-		width:50px;
+		height:52px;
+		width:52px;
 	}
 </style>
 <body class="body">
-	<div></div>
 
 
 </body>
