@@ -1,6 +1,52 @@
 <!DOCTYPE html>
 <html>
 <script>
+	var _ = {};
+
+	_.getSize = function(){
+
+		thisSize = window.prompt('How big should this map be?');
+
+		return thisSize;
+
+	}
+
+	_.createBoard = function(width){
+
+		// width = _.getSize();
+
+		for(let i=0; i<width; i++){
+			// Rows
+
+
+			for(let x=0; x<width+1; x++){
+				// Columns	
+
+
+				div = document.createElement("div");
+				div.className = 'boxb';
+				
+				if(x === 1){
+					div.className = div.className + 'boxborder-left'
+				}
+
+				document.body.appendChild(div);
+
+				console.info('x = ' + x);
+
+			}
+
+
+			div = document.createElement("div");
+			div.className = 'box1';
+
+			document.body.appendChild(div);
+
+			console.info('i = ' + i);
+
+		}
+
+	}
 
 </script>
 
@@ -15,21 +61,21 @@
 		height:50px;
 		width:50px;
 		background:green;
-		border-right: 1px lightgray solid;
+		border-right: 1px #ECECEC solid;
 	}
 
 	.boxb:hover 
 	{
-		background:darkgreen;
+		background: #00CC00;
 	}
 
 
-	.boxpad boxborder-top {
+	.boxpad {
 		padding: 0px lightgray solid;
 	}
 
 	.boxborder-left {
-		border-left: 1px lightgray solid;
+		border-left: 1px #FF0000 solid;
 	}
 
 	.boxborder-top {
@@ -48,93 +94,7 @@
 	}
 </style>
 <body class="body">
-	<div class="boxb boxpad boxborder-top boxborder-left "></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-
-	<div class="box1 boxpad boxborder-top"></div>
-
-	<div class="boxb boxpad boxborder-top boxborder-left"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	
-	<div class="box1 boxpad boxborder-top"></div>
-
-	<div class="boxb boxpad boxborder-top boxborder-left"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-
-	<div class="box1 boxpad boxborder-top"></div>
-
-	<div class="boxb boxpad boxborder-top boxborder-left"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	
-	<div class="box1 boxpad boxborder-top"></div>
-
-	<div class="boxb boxpad boxborder-top boxborder-left"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-
-	<div class="box1 boxpad boxborder-top"></div>
-
-	<div class="boxb boxpad boxborder-top boxborder-left"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	
-	<div class="box1 boxpad boxborder-top"></div>
-
-	<div class="boxb boxpad boxborder-top boxborder-left"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-	<div class="boxb boxpad boxborder-top"></div>
-
-	<div class="box1 boxpad boxborder-top"></div>
-
-	<div class="boxb boxpad boxborder-top boxborder-bottom boxborder-left"></div>
-	<div class="boxb boxpad boxborder-top boxborder-bottom"></div>
-	<div class="boxb boxpad boxborder-top boxborder-bottom"></div>
-	<div class="boxb boxpad boxborder-top boxborder-bottom"></div>
-	<div class="boxb boxpad boxborder-top boxborder-bottom"></div>
-	<div class="boxb boxpad boxborder-top boxborder-bottom"></div>
-	<div class="boxb boxpad boxborder-top boxborder-bottom"></div>
-	<div class="boxb boxpad boxborder-top boxborder-bottom"></div>
-	
-	<div class="box1 boxpad boxborder-top"></div>
+	<div></div>
 
 
 </body>
